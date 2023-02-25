@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      "fontFamily": {
+        "inter": 'Inter'
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-inner-border"),
+  ],
 }
